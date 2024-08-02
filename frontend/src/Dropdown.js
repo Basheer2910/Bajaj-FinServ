@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
+import './index.css'; // Import the CSS file
 
 const options = [
   { value: 'Alphabets', label: 'Alphabets' },
@@ -17,7 +18,7 @@ function Dropdown({ onChange }) {
       isMulti
       name="options"
       options={options}
-      className="basic-multi-select"
+      className="dropdown-select"
       classNamePrefix="select"
       onChange={handleChange}
     />

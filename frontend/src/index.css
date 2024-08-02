@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* App styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.response-section {
+  display: flex;
+  gap: 8px;
+}
+
+.response-title {
+  font-weight: bold;
+}
+
+/* JsonInput styles */
+.json-input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.json-input-textarea {
+  border: 1px solid #718096;
+  padding: 8px;
+}
+
+.json-input-button {
+  background-color: #24A0ED;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.json-input-error {
+  color: red;
+}
+
+/* Dropdown styles */
+.dropdown-select {
+  margin-top: 24px;
 }

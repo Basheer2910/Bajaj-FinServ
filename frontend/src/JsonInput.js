@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './index.css'; // Import the CSS file
 
 function JsonInput({ onSubmit }) {
   const [inputValue, setInputValue] = useState('');
@@ -20,18 +21,26 @@ function JsonInput({ onSubmit }) {
       onSubmit(parsedData);
     } catch (err) {
       console.log(err);
-      setError('Invalid JSON format', err);
+      setError('Invalid JSON format');
     }
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <textarea value={inputValue} onChange={handleChange} rows="5" cols="50" />
+      <form onSubmit={handleSubmit} className="json-input-form">
+        <textarea
+          value={inputValue}
+          onChange={handleChange}
+          rows="5"
+          cols="50"
+          className="json-input-textarea"
+          placeholder="Enter JSON data..."
+          autoFocus
+        />
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="json-input-button">Submit</button>
       </form>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="json-input-error">{error}</p>}
     </div>
   );
 }
