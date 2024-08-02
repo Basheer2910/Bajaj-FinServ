@@ -26,10 +26,10 @@ function JsonInput({ onSubmit }) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <textarea value={inputValue} onChange={handleChange} rows="5" cols="50" />
+      <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">
+        <textarea value={inputValue} onChange={handleChange} rows="5" cols="50" className="border-b-slate-700 p-2" placeholder='Enter JSON data...'autoFocus/>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-[#24A0ED] px-3 py-2 rounded text-white">Submit</button>
       </form>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>

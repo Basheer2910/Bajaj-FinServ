@@ -17,7 +17,7 @@ function Dropdown({ onChange }) {
       isMulti
       name="options"
       options={options}
-      className="basic-multi-select"
+      className="basic-multi-select mt-6"
       classNamePrefix="select"
       onChange={handleChange}
     />

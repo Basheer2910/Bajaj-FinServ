@@ -29,20 +29,20 @@ function App() {
     return (
       <div>
         {selectedOptions.includes('Alphabets') && (
-          <div>
-            <h3>Alphabets</h3>
+          <div className="flex gap-2">
+            <h3 className="font-semibold">Alphabets : </h3>
             <p>{alphabets.join(', ')}</p>
           </div>
         )}
         {selectedOptions.includes('Numbers') && (
-          <div>
-            <h3>Numbers</h3>
+          <div className="flex gap-2">
+            <h3 className="font-semibold">Numbers</h3>
             <p>{numbers.join(', ')}</p>
           </div>
         )}
         {selectedOptions.includes('Highest Alphabet') && (
-          <div>
-            <h3>Highest Alphabet</h3>
+          <div className="flex gap-2">
+            <h3 className="font-semibold">Highest Alphabet</h3>
             <p>{highest_alphabet.join(', ')}</p>
           </div>
         )}
@@ -51,7 +51,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App flex flex-col justify-center items-center w-full mt-6">
       <JsonInput onSubmit={handleJsonSubmit} />
       {response && <Dropdown onChange={handleOptionChange} />}
       {renderResponse()}
