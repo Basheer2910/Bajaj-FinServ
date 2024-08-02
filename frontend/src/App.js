@@ -32,19 +32,19 @@ function App() {
         {selectedOptions.includes('Alphabets') && (
           <div className="response-section">
             <h3 className="response-title">Alphabets : </h3>
-            <p>{alphabets.join(', ')}</p>
+            <p className="response-data">{alphabets.join(', ')}</p>
           </div>
         )}
         {selectedOptions.includes('Numbers') && (
           <div className="response-section">
-            <h3 className="response-title">Numbers</h3>
-            <p>{numbers.join(', ')}</p>
+            <h3 className="response-title">Numbers :</h3>
+            <p className="response-data">{numbers.join(', ')}</p>
           </div>
         )}
         {selectedOptions.includes('Highest Alphabet') && (
           <div className="response-section">
-            <h3 className="response-title">Highest Alphabet</h3>
-            <p>{highest_alphabet.join(', ')}</p>
+            <h3 className="response-title">Highest Alphabet :</h3>
+            <p className="response-data">{highest_alphabet.join(', ')}</p>
           </div>
         )}
       </div>

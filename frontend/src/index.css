@@ -16,7 +16,11 @@
 .response-title {
   font-weight: bold;
 }
-
+.response-data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* JsonInput styles */
 .json-input-form {
   display: flex;
@@ -46,3 +50,4 @@
 .dropdown-select {
   margin-top: 24px;
 }
+
