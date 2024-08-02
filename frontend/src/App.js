@@ -10,7 +10,7 @@ function App() {
 
   const handleJsonSubmit = async (data) => {
     try {
-      const res = await axios.post('http://localhost:5000/bfhl', { data: data.data });
+      const res = await axios.post('https://testbfhl-backend.vercel.app/bfhl', { data: data.data });
       setResponse(res.data);
     } catch (error) {
       console.error('Error submitting JSON:', error);
